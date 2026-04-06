@@ -6,11 +6,11 @@ import Login from '../screens/Login';
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
-  let  userToken = null;
+  const [userToken, setUserToken] = useState(null);
   
   const entrar = (email, senha) => {
     if (email === 'admin@admin.com' && senha === '123') {
-      userToken = 'token-valido'; 
+      setUserToken('token-valido'); 
     } else {
       alert('Dados incorretos');
     }
@@ -19,9 +19,9 @@ const AppNavigator = () => {
   const sair = () => setUserToken(null);
 
   return (
-      // <Stack.Navigator screenOptions={{ headerShown: false }}>
-      //   <Stack.Screen name='Home' component={HomeNavigator} />
-      // </Stack.Navigator>
+    //   <Stack.Navigator screenOptions={{ headerShown: false }}>
+    //     <Stack.Screen name='Home' component={HomeNavigator} />
+    // </Stack.Navigator>
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {userToken == null ? (
         <Stack.Screen name="Login">
