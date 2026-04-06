@@ -1,16 +1,104 @@
-<<<<<<< HEAD
-# InfnetFood
-InfnetFood
-=======
-# Sample Snack app
+# 🍔 InfnetFood
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+O **InfnetFood** é um aplicativo de delivery desenvolvido com **React Native** e **Expo**. O projeto simula uma plataforma completa de pedidos, desde a navegação por categorias e restaurantes até o fluxo de checkout e perfil do usuário.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+---
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+## 🚀 Tecnologias Utilizadas
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+* **React Native**: Framework para desenvolvimento mobile.
+* **Expo**: Plataforma para facilitar o desenvolvimento e testes.
+* **React Navigation**: Gerenciamento de rotas (Stack e Tab Navigation).
+* **Context API**: Gerenciamento de estado global (Temas e Carrinho).
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
->>>>>>> master
+---
+
+## 📂 Estrutura de Pastas
+
+```text
+├── assets/          # Imagens, ícones e arquivos JSON de animação
+├── components/      # Componentes reutilizáveis (Cards de produtos, Mapas, etc.)
+├── context/         # Gerenciamento de temas (Dark/Light Mode)
+├── data/            # Mock de dados (Produtos e Restaurantes)
+├── navigation/      # Configuração das rotas (Home, Login, Tabs)
+├── screens/         # Telas principais do aplicativo
+├── scripts/         # Scripts auxiliares de dados
+└── App.js           # Ponto de entrada do aplicativo
+````
+
+---
+
+## 📱 Principais Funcionalidades
+
+- **Autenticação**: Tela de Login integrada ao fluxo de navegação.
+    
+- **Navegação por Categorias**: Filtro de restaurantes e pratos por tipo de comida.
+    
+- **Carrinho de Compras**: Adição de itens e visualização de valores.
+    
+- **Geolocalização**: Integração de mapa para visualização de entrega.
+    
+- **Temas**: Suporte a modo claro e escuro via Context API.
+    
+- **Checkout**: Fluxo final de confirmação de pedido.
+    
+
+---
+
+## 🛠️ Como Executar o Projeto
+
+1. **Clone o repositório:**
+
+    ```
+    git clone https://github.com/gabriel-nardes-st/InfnetFood.git
+    ```
+
+1. **Instale as dependências:**
+
+    ```
+    cd InfnetFood
+    npm install
+    ```
+2. **Inicie o Expo:**
+
+    ```
+   npx expo start
+    ```
+
+3. **Abra no seu dispositivo:**
+
+- Use o app **Expo Go** no celular (escaneie o QR Code).
+
+
+
+---
+
+## 📄 Telas Documentadas
+
+- **Login**: Acesso do usuário.
+
+- **Home**: Listagem de categorias e mapa.
+
+- **Restaurante**: Detalhes do estabelecimento e menu de produtos.
+
+- **Carrinho/Checkout**: Revisão do pedido e finalização.
+
+- **Perfil/Configurações**: Gerenciamento de conta e preferências de tema.
+
+- **Detalhes**: Ver detalhes da comida e botão para adicionar ao carrinho.
+
+- **Pedidos**: Ver pedidos finalizados.
+
+---
+### 🌐 Integrações com API Externa
+
+O projeto consome a API do **ViaCEP** para agilizar o preenchimento de endereços e melhorar a experiência do usuário (UX) no checkout.
+
+- **Endpoint utilizado:** `https://viacep.com.br/ws/${cep}/json/`
+    
+- **Localização no código:** O consumo da API está implementado na tela de **Checkout** (ou onde você inseriu o campo de endereço).
+    
+- **Funcionamento:** 1. O usuário digita o CEP. 2. Uma função assíncrona (`fetch`) é disparada. 3. Os dados de  Cidade são preenchidos automaticamente no endereço do formulário.
+
+---
+**Desenvolvido por [Sedran18](https://www.google.com/search?q=https://github.com/sedran18&authuser=4)**
