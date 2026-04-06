@@ -53,23 +53,23 @@ O **InfnetFood** é um aplicativo de delivery desenvolvido com **React Native** 
     git clone https://github.com/gabriel-nardes-st/InfnetFood.git
     ```
 
-1. **Instale as dependências:**
+2. **Instale as dependências:**
 
     ```
     cd InfnetFood
     npm install
     ```
-2. **Inicie o Expo:**
+3. **Inicie o Expo:**
 
     ```
    npx expo start
     ```
 
-3. **Abra no seu dispositivo:**
+4. **Abra no seu dispositivo:**
 
 - Use o app **Expo Go** no celular (escaneie o QR Code).
 
-
+5. Entre com "admin@admin.com"  e 123, para e-mail e senha respectivamente.
 
 ---
 
@@ -101,4 +101,13 @@ O projeto consome a API do **ViaCEP** para agilizar o preenchimento de endereço
 - **Funcionamento:** 1. O usuário digita o CEP. 2. Uma função assíncrona (`fetch`) é disparada. 3. Os dados de  Cidade são preenchidos automaticamente no endereço do formulário.
 
 ---
+
+
+
+<img width="241" height="530" alt="image" src="https://github.com/user-attachments/assets/cefd5ebe-ffb3-4a6a-9b9e-2b16c05e3ddf" />
+<img width="245" height="532" alt="image" src="https://github.com/user-attachments/assets/e2c651ef-bab9-4eab-9791-1791bdebad93" />
+<img width="251" height="530" alt="image" src="https://github.com/user-attachments/assets/5c596905-2b6d-4728-896f-b8ebb6cac409" />
+<img width="251" height="528" alt="image" src="https://github.com/user-attachments/assets/2773d791-8cdc-4190-a65a-ce286263ff50" />
+
+
 **Desenvolvido por [Sedran18](https://www.google.com/search?q=https://github.com/sedran18&authuser=4)**
